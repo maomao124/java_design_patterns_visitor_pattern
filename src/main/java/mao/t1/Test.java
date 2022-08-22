@@ -15,5 +15,16 @@ package mao.t1;
 
 public class Test
 {
+    public static void main(String[] args)
+    {
+        Home home = new Home();
+        home.add(new Cat());
+        home.add(new Dog());
 
+        Owner owner = new Owner();
+        Someone someone = new Someone();
+        home.action(owner);
+        System.out.println("------------");
+        home.action(someone);
+    }
 }
