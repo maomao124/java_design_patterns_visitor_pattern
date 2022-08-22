@@ -20,6 +20,9 @@ public class BusinessReport
 {
     private final List<Staff> mStaffs = new LinkedList<>();
 
+    /**
+     * Instantiates a new Business report.
+     */
     public BusinessReport()
     {
         mStaffs.add(new Manager("经理-A"));
@@ -30,6 +33,11 @@ public class BusinessReport
         mStaffs.add(new Engineer("工程师-D"));
     }
 
+    /**
+     * 展示报表
+     *
+     * @param visitor Visitor 实现类
+     */
     public void showReport(Visitor visitor)
     {
         for (Staff staff : mStaffs)

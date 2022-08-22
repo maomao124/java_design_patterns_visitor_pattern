@@ -15,7 +15,17 @@ package mao.t2;
 
 public interface Visitor
 {
+    /**
+     * 访问工程师
+     *
+     * @param engineer Engineer
+     */
     void visit(Engineer engineer);
 
+    /**
+     * 访问经理
+     *
+     * @param manager Engineer
+     */
     void visit(Manager manager);
 }
