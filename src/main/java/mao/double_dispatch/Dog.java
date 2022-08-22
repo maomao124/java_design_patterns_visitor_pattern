@@ -15,7 +15,7 @@ package mao.double_dispatch;
 
 public class Dog extends Animal
 {
-    public void accept(Execute exe)
+    public void accept(IExecute exe)
     {
         exe.execute(this);
     }

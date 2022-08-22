@@ -15,9 +15,24 @@ package mao.double_dispatch;
 
 public interface IExecute
 {
+    /**
+     * Execute.
+     *
+     * @param animal the animal
+     */
     void execute(Animal animal);
 
+    /**
+     * Execute.
+     *
+     * @param dog the dog
+     */
     void execute(Dog dog);
 
+    /**
+     * Execute.
+     *
+     * @param cat the cat
+     */
     void execute(Cat cat);
 }

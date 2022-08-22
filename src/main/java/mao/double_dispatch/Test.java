@@ -17,7 +17,7 @@ public class Test
 {
     public static void main(String[] args)
     {
-        Execute execute = new Execute();
+        IExecute execute = new Execute();
         Animal animal = new Animal();
         Animal animal1 = new Cat();
         Animal animal2 = new Dog();
